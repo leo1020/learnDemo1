@@ -1,0 +1,33 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreGraphics/CoreGraphics.h>
+
+    #import "UIView+Fram.h"
+
+//导航栏背景颜色
+#define kDefaultColor [UIColor colorWithRed:251/255.0 green:101/255.0 blue:5/255.0 alpha:1]
+
+
+
+//颜色的设置
+#define kColor(a,b,c,d) [UIColor colorWithRed:a green:b  blue:c alpha:1]
+
+//背景颜色
+#define kGrayColor kColor(0.9569, 0.9569, 0.9569, 1)
+
+#define kBlackColor kColor(0.3765, 0.3843, 0.3804, 1)
+
+#endif
